@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: sans-serif;
+    color: #f5ebe0;
+}
+section{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* #344e41 */
+/* #d4a373 */
+/* #f5ebe0 */
+
+.header-container{
+    width: 100%;
+    height: fit-content;
+    background: #344e41;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+.nav-bar{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar .logo{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.nav-bar .logo h1{
+    color: #d4a373;
+    font-size: 30px;
+}
+.nav-bar .logo .c-box{
+    width: 20px;
+    height: 20px;
+    background-color: #d4a373;
+    border-radius: 50%;
+    position: absolute;
+    right: -25px;
+    bottom: 0;
+    border: 1px solid white;
+}
+
+/* styling the button in the nav bar */
+
+.nav-bar .button a{
+    background-color: #d4a373;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+.nav-bar .button a i{
+    color: black;
+}
+
+/* styling the menu items */
+
+.nav-bar .menu-items ul li a:hover{
+    padding: 10px 0;
+    border-bottom: 3px solid peru;
+}
+.active{
+    color: #d4a373;
+    font-weight: bold;
+}
+.nav-bar .menu-items ul {
+    display: flex;
+    gap: 25px;
+}
+
+/* Styling the description section */
+
+.des{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.des .text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: #f5ebe0;
+}
+.des .text a{
+    width: 90px;
+    padding: 7px 10px;
+    border-radius: 17px;
+    color: black;
+    background-color: #d4a373;
+    
+} 
+.des .pic{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.des .text h1{
+    font-size: 45px;
+}
+.des .text span{
+    color: #d4a373;
+}
+
+
+.image-box{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid #d4a373;
+    overflow: hidden;
+}
+.image-box img{
+    width: 90%;
+}
+
+
+
+@media only screen and (max-width: 792px){
+
+    .nav-bar .menu-items{
+        display: none;
+    }
+
+    .des{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .des .pic{
+        width: 80%;
+    }
+    .des .text{
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+
+    .des .pic{
+        width: 100%;
+    }
+    .des .text{
+        width: 100%;
+    }
+
+}
